@@ -2,6 +2,9 @@ pipeline {
   agent {
     label 'control'
   }
+  environment {
+    MY_NAME = 'MUKESH'
+  }
   stages {
     stage('Say Hello control') {
       steps {

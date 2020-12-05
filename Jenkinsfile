@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Say Hello control') {
       steps {
-        echo 'Hello from Mukesh again'
+        echo 'Hello from $MY_NAME using ENV'
         sh 'java -version'
       }
     }
